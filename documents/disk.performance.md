@@ -196,6 +196,36 @@ Windows System Assessment Tool
 > Total Run Time 00:08:05.03
 ```
 
+
+## Media: GoldFlash 16G USB 2.0 Memory stick (about 3.5$)
+
+R(22.34 MB/s) / W(8.98 MB/s) / T(00:16:05.30)
+
+```
+C:\Windows\system32>winsat disk -drive g
+Windows System Assessment Tool
+> Running: Feature Enumeration ''
+> Run Time 00:00:00.00
+> Running: Storage Assessment '-drive g -ran -read'
+> Run Time 00:00:01.31
+> Running: Storage Assessment '-drive g -seq -read'
+> Run Time 00:00:06.03
+> Running: Storage Assessment '-drive g -seq -write'
+> Run Time 00:01:06.47
+> Running: Storage Assessment '-drive g -flush -seq'
+> Run Time 00:00:37.25
+> Running: Storage Assessment '-drive g -flush -ran'
+> Run Time 00:14:06.47
+> Disk  Random 16.0 Read                       15.48 MB/s          5.7
+> Disk  Sequential 64.0 Read                   22.34 MB/s          3.8
+> Disk  Sequential 64.0 Write                  8.98 MB/s          2.7
+> Average Read Time with Sequential Writes     17.434 ms          2.9
+> Latency: 95th Percentile                     2344.683 ms          1.8
+> Latency: Maximum                             4664.048 ms          1.6
+> Average Read Time with Random Writes         422.851 ms          1.9
+> Total Run Time 00:16:05.30
+```
+
 # Options
 
 Change command prompt to US English
