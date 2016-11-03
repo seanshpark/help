@@ -107,7 +107,6 @@ Windows System Assessment Tool
 
 ## Media: Samsung 16GB Class 6
 
-
 ### Transend USB 3.0 Card reader RDF5W
 
 R(22.94 MB/s) / W(5.71 MB/s) / T(00:02:25.02)
@@ -164,6 +163,37 @@ Windows System Assessment Tool
 > Latency: Maximum                             363.212 ms          5.7
 > Average Read Time with Random Writes         9.840 ms          4.5
 > Total Run Time 00:02:30.06
+```
+
+## Media: SanDisk 8GB Class 4
+
+### Transend USB 3.0 Card reader RDF5W
+
+R(43.85 MB/s) / W(6.26 MB/s) / T(00:08:05.03)
+
+```
+C:\Windows\system32>winsat disk -drive g
+Windows System Assessment Tool
+> Running: Feature Enumeration ''
+> Run Time 00:00:00.00
+> Running: Storage Assessment '-drive g -ran -read'
+> Run Time 00:00:01.33
+> Running: Storage Assessment '-drive g -seq -read'
+> Run Time 00:00:02.47
+> Running: Storage Assessment '-drive g -seq -write'
+> Run Time 00:01:25.09
+> Running: Storage Assessment '-drive g -flush -seq'
+> Run Time 00:00:13.08
+> Running: Storage Assessment '-drive g -flush -ran'
+> Run Time 00:06:22.56
+> Disk  Random 16.0 Read                       15.90 MB/s          5.7
+> Disk  Sequential 64.0 Read                   43.85 MB/s          5.1
+> Disk  Sequential 64.0 Write                  6.26 MB/s          2.5
+> Average Read Time with Sequential Writes     5.856 ms          5.7
+> Latency: 95th Percentile                     724.700 ms          1.9
+> Latency: Maximum                             1582.349 ms          1.9
+> Average Read Time with Random Writes         191.517 ms          1.9
+> Total Run Time 00:08:05.03
 ```
 
 # Options
